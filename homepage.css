@@ -1,0 +1,44 @@
+body
+{
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(157, 163, 159);
+    /* height: 2000px; */
+}
+#id1
+{
+    margin-left: 0%;
+}
+
+.id44
+{
+    text-decoration: underline;
+    color: rgb(2, 2, 15);
+    background-color: rgb(53, 107, 133);
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: cursive;
+    border-bottom: solid 4px palegoldenrod;
+    border-left: solid 4px palegreen;
+    border-right: solid 4px paleturquoise;
+    border-top: solid 4px palevioletred;
+    text-align: center;
+}
+.class10
+{
+    color: rgb(6, 243, 45);
+    background-color: rgb(156, 16, 16);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 200px;
+    margin-left: 40%;
+}
+.class15
+{
+    border-radius: 100px;
+}
+
+.class16
+{
+    text-decoration: none;
+}

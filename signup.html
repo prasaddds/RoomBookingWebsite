@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <script>
+        function a() {
+				var name =
+					document.forms["RegForm"]["First Name"];
+				var what =
+					document.forms["RegForm"]["Subject"];
+				var password =
+					document.forms["RegForm"]["Create_Password"];
+                    var confirmpassword =
+					document.forms["RegForm"]["Confirm_Password"];
+				var Email =
+					document.forms["RegForm"]["Email"];
+
+				if (name.value == "") {
+					alert("Please enter your first name.");
+					return false;
+				}
+
+                if (Email.value == "") {
+					alert("Please enter your mail");
+					return false;
+				}
+				if (password.value == "") {
+					alert("Please create your password");
+					return false;
+				}
+                if (confirmpassword.value == "") {
+					alert("Please confirm your password");
+					return false;
+				}
+                
+                var i = document.getElementById("p1").value;
+                var j = document.getElementById("p2").value;
+                if(i!= j)
+                {
+                    alert("Password and Confirm Password should be same.");
+                    return false;
+                }
+                alert("Account created successfully");
+                return true;
+            }
+
+
+
+    </script>
+  </head>
+  
+<style>
+    #id1
+    {
+        text-align: center;
+        margin-top: 5px;
+        font-size: larger;
+        font-weight: 20px;
+        color: rgb(247, 10, 10);
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-bottom: 10%;
+        background-color: black;
+    }
+    body{
+        padding: 0px;
+        margin: 0px;
+        background-color: rgb(157, 163, 159);
+        font-size: larger;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    input[type="text"]
+	{
+		color:rgb(214, 32, 144);
+        font-weight: bold;
+	}
+    .id44
+    {
+        text-decoration: underline;
+    color: rgb(2, 2, 15);
+    background-color: rgb(53, 107, 133);
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: cursive;
+    border-bottom: solid 4px palegoldenrod;
+    border-left: solid 4px palegreen;
+    border-right: solid 4px paleturquoise;
+    border-top: solid 4px palevioletred;
+    text-align: center;
+    }
+    *
+    {
+        padding: 0px;
+        margin: 0px;
+
+    }
+    #im
+    {
+        border-radius: 25px;
+        margin-left: 49%;
+        margin-top: 1%;
+    }
+    #id101
+    {
+      font-size: 25px;
+    }
+</style> 
+  <body>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+    <h1 align="center" class="id44">
+        <img src="images/room_logo.jpg" alt="" height="50px" width="50px" >
+        Welcome To Kangarooms
+    </h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="">Kangarooms</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="homepage.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contact.html">Contact us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" aria-current="page" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Fill me in
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="login.html" target="_blank">login</a></li>
+                  <li><a class="dropdown-item" href="signup.html" target="_blank">signup</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <img src="images/loginimage.jpg" alt="loginimage" height="10%" width="10%" id="im" > <br>
+    <div id="id101" align="center">
+        <pre>
+		<form name="RegForm" action=""
+			onsubmit="return a()" method="post">
+			<p>First Name     : <input type="text"size="20" name="First Name" /></p>
+            <p>Last Name      : <input type="text"size="20" name="Last_Name" /></p>
+            <p>Email          : <input type="email"size="20" name="Email" /></p>
+			<p>Create Password : <input type="text"size="20" name="Create_Password" id="p1"/></p>
+            <p>Confirm Password: <input type="text"size="20" name="Confirm_Password" id="p2"/></p>
+    <br />
+    <input type="reset" value="Reset" name="Reset" class="btn btn-primary"/>   <input type="submit" value="send" class="btn btn-primary"/>
+		</pre>
+		</form>
+    <br><br> <br>
+</div>
+  </body>
+</html>
